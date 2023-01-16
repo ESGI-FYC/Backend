@@ -52,7 +52,7 @@ jobs:
         run: mvn -B test --file ./pom.xml
 
   package:
-      needs: [code_quality]
+      needs: [test]
       runs-on: ubuntu-latest
       permissions:
         contents: read
